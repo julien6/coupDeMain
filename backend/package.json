@@ -1,0 +1,28 @@
+{
+  "name": "coupDeMain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backend",
+  "scripts": {
+    "start": "nodemon --watch src --ext ts --exec ts-node --ignore '*.test.ts' --delay 3 src/app.ts",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.23.1",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.17.1",
+    "mongodb": "^4.9.1",
+    "text-encoding": "^0.7.0",
+    "ts-node": "^10.9.1"
+  }
+}
